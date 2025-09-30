@@ -14,7 +14,6 @@ const PostForm = () => {
     if (!state.user) {
       alert("Please login to Post")
       router.push("/login")
-      return
     }
     e.preventDefault()
     try {

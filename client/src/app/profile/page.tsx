@@ -120,7 +120,7 @@ const Page = () => {
                           onChange={e => setEditForm(e.target.value)}
                           type="text"
                           value={editForm}
-                          className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mt-1"
+                          className="w-full p-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-neutral-500 mt-1"
                         />
                         {/* {post.content} */}
                       </p>
@@ -142,7 +142,7 @@ const Page = () => {
                       <div className="mt-2 flex space-x-2">
                         <button
                           onClick={() => handleSaveEdit(post._id)}
-                          className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
+                          className="bg-orange-500 text-white px-3 py-1 rounded-md hover:bg-orange-600"
                         >
                           Update
                         </button>
