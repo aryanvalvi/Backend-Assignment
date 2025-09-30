@@ -31,6 +31,7 @@ const PostForm = () => {
       const data = await res.json()
       console.log(data)
       if (res.ok) {
+        dispatch({type: "toggel"})
         router.refresh()
         setText("")
       }

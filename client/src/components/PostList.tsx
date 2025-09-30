@@ -4,7 +4,7 @@ import React, {useEffect, useState} from "react"
 
 const PostList = () => {
   const [posts, setPosts] = useState<any>(null)
-  const {toggle} = useAppContext()
+  const {state} = useAppContext()
   useEffect(() => {
     const getUser = async () => {
       try {
@@ -20,7 +20,7 @@ const PostList = () => {
       } catch (error) {}
     }
     getUser()
-  }, [toggle])
+  }, [state.toggle])
 
   return (
     <div className="space-y-4">

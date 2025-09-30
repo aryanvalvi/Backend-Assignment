@@ -3,6 +3,7 @@ import {createContext, useContext, useEffect, useReducer} from "react"
 
 const initialState = {
   user: null,
+  toggle: null,
 }
 
 function reducer(state: any, action: any) {
@@ -11,6 +12,8 @@ function reducer(state: any, action: any) {
       return {...state, user: action.payload}
     case "LOGOUT":
       return {...state, user: null}
+    case "toggel":
+      return {...state, toggle: +1}
     default:
       return state
   }
