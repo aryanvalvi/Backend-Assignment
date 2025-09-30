@@ -28,10 +28,13 @@ export const UserContextProvider = ({
   useEffect(() => {
     const getUser = async () => {
       try {
-        const res = await fetch("http://localhost:5001/checkUser", {
-          method: "GET",
-          credentials: "include",
-        })
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_Backed_Url}/checkUser`,
+          {
+            method: "GET",
+            credentials: "include",
+          }
+        )
         const data = await res.json()
         if (data.user) {
           dispatch({type: "SET_USER", payload: data.user.data})
