@@ -1,7 +1,7 @@
 # Backend Development Assignment
 
 This project is a backend development assignment completed as part of the InternShala task. It demonstrates a full-stack setup with authentication, role-based access, and CRUD operations.
-
+**Live Link:** [https://postify.aryanvalvi.com](https://postify.aryanvalvi.com)
 ## Features
 
 - **User Authentication:** Register and login users with **JWT** authentication and **bcrypt** password hashing.
@@ -25,3 +25,4 @@ This project is a backend development assignment completed as part of the Intern
 The project is deployed on a personal cloud VPS with **HTTPS** configured via **Nginx** and is accessible through a personal domain.
 
 
+**Live Link:** [https://postify.aryanvalvi.com](https://postify.aryanvalvi.com)
