@@ -49,7 +49,7 @@ const Navbar = () => {
           </Link>
           {state.user === null ? (
             <div>
-              <Link href={"/signup"}>
+              <Link href={"/register"}>
                 <button className="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">
                   Sign Up
                 </button>

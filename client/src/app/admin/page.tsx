@@ -25,7 +25,7 @@ const page = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_Backed_Url}admin`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_Backed_Url}/admin`, {
           method: "GET",
           credentials: "include",
         })
@@ -39,10 +39,13 @@ const page = () => {
   useEffect(() => {
     const isAdmin = async () => {
       try {
-        const res = await fetch("http://localhost:5001/isadmin", {
-          method: "GET",
-          credentials: "include",
-        })
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_Backed_Url}/isadmin`,
+          {
+            method: "GET",
+            credentials: "include",
+          }
+        )
         if (!res.ok) {
           alert("Yout are not authorized for admin console")
           router.push("/")
