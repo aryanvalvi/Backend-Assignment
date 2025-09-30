@@ -60,13 +60,13 @@ const page = () => {
   return (
     <div>
       {data ? (
-        <div className="bg-white p-6 rounded-lg shadow-md  mx-auto h-[100vh]">
+        <div className="bg-white p-6 rounded-lg shadow-md   mx-auto h-[100vh]">
           <h2 className="text-2xl font-semibold text-gray-700 mb-4 ">Posts</h2>
-          <div className="gap-10 flex w-full justify-center items-center ">
+          <div className="gap-10 flex flex-wrap  justify-center items-center overflow-x-auto">
             {data.map((post: any) => (
               <div
                 key={post._id}
-                className="p-4 border rounded-md bg-gray-50  w-70 h-70 relative"
+                className="p-4 border rounded-md bg-gray-50   w-70 h-70 relative"
               >
                 <p className="text-gray-600 flex items-center ">
                   <span className="font-extrabold">Email:</span>
